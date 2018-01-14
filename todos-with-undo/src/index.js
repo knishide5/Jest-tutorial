@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import todo from './reducers'
-import {addTodo} from './actions'
+import {addTodo, toggleTodo} from './actions'
 import App from './components/App'
 
 // reducerをstoreに渡す
@@ -19,4 +19,5 @@ render(
 
 store.dispatch(addTodo('Hello World!'))
 store.dispatch(addTodo('Hello Redux!'))
+store.dispatch(toggleTodo(0))
 console.log(store.getState())
