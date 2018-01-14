@@ -19,5 +19,4 @@ render(
 
 store.dispatch(addTodo('Hello World!'))
 store.dispatch(addTodo('Hello Redux!'))
-store.dispatch(toggleTodo(0))
 console.log(store.getState())
