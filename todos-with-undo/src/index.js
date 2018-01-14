@@ -18,4 +18,5 @@ render(
 )
 
 store.dispatch(addTodo('Hello World!'))
+store.dispatch(addTodo('Hello Redux!'))
 console.log(store.getState())
