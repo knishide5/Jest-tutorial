@@ -17,8 +17,6 @@ render(
   document.getElementById('root')
 )
 
-store.dispatch(addTodo('Hello World!'))
-store.dispatch(addTodo('Hello Redux!'))
 console.log(store.getState())
 store.dispatch(setVisibleFilter('SHOW_COMPLETED'))
 console.log(store.getState())
